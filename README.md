@@ -13,7 +13,7 @@ https://jekyllrb.com/docs/installation/windows/
 
 ~Run the following: ~
 
-~ choco install msys2 ~
+~choco install msys2~
 
 ~choco install ruby --version 2.5.3.101~
 
