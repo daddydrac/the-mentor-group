@@ -7,6 +7,7 @@ Install chocolatey & wsl2
 Run the following: 
 
 ```choco install msys2```
+
 ```choco install ruby --version 2.5.3.101```
 
 ------------------------------------------
@@ -17,13 +18,21 @@ Installation
 I assume you have already downloaded and installed Ruby. Here's what you need to do next:
 
 Run ```gem install jekyll bundler```.
+
 Copy the theme in your desired folder.
+
 Enter into the folder by executing cd name-of-the-folder.
+
 Run ```bundle install```.
+
 If you want to access and customize the theme, use bundle exec jekyll serve. This way it will be accessible on http://localhost:4000.
+
 Upload the content of the compiled ```_site folder``` on your host server.
+
 Configuration & First Steps
+
 All configuration options are in the ```_config.yml``` file.
+
 
 General Settings
 
