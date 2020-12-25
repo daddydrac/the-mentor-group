@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Documentation - Configuration &amp; First Steps | Steve Austin &mdash; UI/UX Engineer </title>
+    <meta property="og:title" content="Documentation - Configuration &amp; First Steps | Steve Austin &mdash; UI/UX Engineer " />
+    <meta name="twitter:title" content="Documentation - Configuration &amp; First Steps | Steve Austin &mdash; UI/UX Engineer " />
+
+    <meta name="description" content="Basic information about the Steve.">
+    <meta name="description" property="og:description" content="Basic information about the Steve." />
+    <meta name="twitter:description" content="Basic information about the Steve." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:site" content="@your_handler" />
+    
+    <meta property="og:url" content="http://localhost:4000/docs/help/docmentation.html" />
+
+    <meta property="og:image" content="" />
+    <meta name="twitter:image" content="" />
+
+    <meta name="author" content="Steve Austin" />
+
+    <meta name="copyright" content="Copyright by Steve Austin. All Rights Reserved." />
+
+    <style>
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/mnpfi9pxYH-Go5UiibESIltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 300;
+            src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v15/vPcynSL0qHq_6dX7lKVByfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(https://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 900;
+            src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url(https://fonts.gstatic.com/s/roboto/v15/bmC0pGMXrhphrZJmniIZpY4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+    </style>
+    
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+    <link rel="canonical" href="http://localhost:4000/docs/help/docmentation.html">
+
+    <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+</head>
+
+    <body>
+        <div class="wrapper">
+            <aside class="user-profile fixed" role="complementary">
+    <div class="burger">
+        <input class="trigger hidden" id="toggleBurger" type="checkbox" />
+        <label for="toggleBurger">
+            <span>Navigation</span>
+        </label>
+    </div>
+
+    <div class="compact-header">
+        <a class="avatar" href="http://localhost:4000"><img alt="Avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg" /></a>
+        <div class="my-info">
+            <strong class="my-name">Steve Austin</strong>
+            <span class="my-job-title">UI/UX Engineer</span>
+        </div>
+    </div>
+
+    
+        
+        <div class="mainmenu">
+            <a href="http://localhost:4000" >Home</a>
+            
+                
+            
+                
+            
+                
+            
+                
+                    <a href="http://localhost:4000/portfolio/" >Portfolio</a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </div>
+        
+    
+
+    <p class="about-me">I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.</p>
+
+    <ul class="socials">
+        <li><a href="http://facebook.com"><svg title="facebook" width="16" height="16" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></li><li><a href="http://twitter.com"><svg title="twitter" width="16" height="16" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+
+        
+            <li><a href="mailto:youremail@gmail.com"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#email-icon"></use></svg></a></li>
+        
+
+        
+         <li><a href="http://localhost:4000/feed.xml"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#rss-icon"></use></svg></a></li>
+        
+    </ul>
+</aside>
+
+            <main class="the-content" role="main">
+                <div class="search" role="search">
+    <div>
+        <div class="show-results-count">0 Results</div>
+        <div class="search-holder">
+            <input type="text" id="search-input" placeholder="search for..." />
+        </div>
+    </div>
+    <ul id="results-container" class="results-container"></ul>
+</div>
+
+
+                <article class="post single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2016-03-20T12:36:00-04:00" itemprop="datePublished">20 Mar, 2016</time></li>
+            
+                
+                <li class="cats">
+                    
+                        <a href="/categories/docs/">docs</a>
+                    
+                        <a href="/categories/help/">help</a>
+                    
+                </li>
+                
+            
+        </ul>
+        <h2 itemprop="name headline">Documentation - Configuration & First Steps</h2>
+    </header>
+
+    <div class="post-content">
+        <h3 id="configuration">Configuration</h3>
+<p>All configuration options are in the <code>_config.yml</code> file.</p>
+
+<figure>
+    <img src="https://cdn.dribbble.com/users/1073937/screenshots/5036567/waterfall.png" />
+    <figcaption>Created by <a href="https://dribbble.com/HannahLizSharp" target="_blank_">Hannah Sharp</a></figcaption>
+</figure>
+
+<h5 id="general-settings">General Settings</h5>
+<ul>
+  <li><strong>name</strong>: Your name.</li>
+  <li><strong>job_title</strong>: Your job title.</li>
+  <li><strong>email</strong>: Your email. There are two cases where email is used. First, if you entered the email and you’ve activated <strong>show_email</strong> option the end result will be a visible social email icon in the sidebar. The second use of your email is when you do not set your own avatar. In this case your email is used by the gravatar plugin to automatically fetch your gravatar.</li>
+  <li><strong>description</strong>: Describe yourself with a couple of words.</li>
+  <li><strong>avatar</strong>: Write down the full path to the avatar <code>http://mysite.com/blog/assets/images/avatar.jpg</code>. If you comment this row, “Steve” checks if you have an email and shows your gravatar if you have any.</li>
+  <li><strong>favicon</strong>: Want a favicon? Enter the full path here. For example <code>http://mysite.com/blog/assets/favicon.ico</code>.</li>
+  <li><strong>twitter_handler</strong>: Add your Twitter username without the @. It will be used for <a href="https://dev.twitter.com/cards/overview" target="_blank">Twitter Cards</a>. The default card type for “Steve” is <a href="https://dev.twitter.com/cards/types/summary-large-image" target="_blank">Summary Card with Large Image</a>.</li>
+  <li><strong>analytics_code</strong>: Add your Google Analytics Tracking ID. Example ID: <em>UA-XXXXXXX-2</em>.</li>
+  <li><strong>disqus</strong>: Add your website shortname from Disqus.</li>
+</ul>
+
+<p><strong>Important Note:</strong> Keep in mind that <strong>name</strong>, <strong>job_title</strong>, <strong>twitter_handler</strong> and some of the post specific variables are used as default meta data in some cases.</p>
+
+<!--more-->
+
+<h5 id="social-accounts">Social Accounts</h5>
+<ul>
+  <li><strong>social_networks</strong>: Here you can find the list of all the available social networks that you can currently use. Of course you can always add a new one by yourself or ask for it to be available in the next version of the theme. If you don’t want a specific social network to be seen, just leave the url value empty or delete the line.</li>
+</ul>
+
+<p><strong>Important:</strong> Do not change the names of the social networks!</p>
+
+<h5 id="modules-settings">Modules Settings</h5>
+<p>One thing to remember - 1 is <strong>on</strong>, 0 is <strong>off</strong>.</p>
+
+<ul>
+  <li><strong>show_categories</strong>: If it is on and you’ve added categories in the post itself the categories will be visible. If it is off and you’ve added categories in the post they will be hidden. This option is helpful if you want to turn on/off categories for all your posts at once.</li>
+  <li><strong>show_tags</strong>: If it is on and you’ve added tags in the post itself the tags will be visible. If it is off and you’ve added tags in the post they will be hidden.  This option is helpful if you want to turn on/off tags for all your posts at once.</li>
+  <li><strong>show_email</strong>: If this is turned on and you’ve entered an email value in <strong>email</strong>, an email icon will appear next to your social media accounts and all your readers will be able to contact you.</li>
+  <li><strong>show_rss</strong>: If this is turned on, a new RSS button will appear in the sidebar next to your social media accounts.</li>
+  <li><strong>show_comments</strong>: If it is on and you’ve added <code>comments: true</code> in the post itself the comments will be visible. If it is off and you’ve added <code>comments: true</code> in the post the comments will be hidden. This option is helpful if you want to turn on/off comments for all your posts at once.</li>
+  <li><strong>show_menu</strong>: If it is on the main menu will be visible.</li>
+  <li><strong>fixed_sidebar</strong>: If it is on the sidebar will be fixed (sticky).</li>
+</ul>
+
+<h5 id="defaults">Defaults</h5>
+<ul>
+  <li><strong>defaults</strong>: The only available option at the moment is whether to enable the comments automatically in the post or not. The default value is <code>true</code>.</li>
+</ul>
+
+<h5 id="serving">Serving</h5>
+<p>These options are pretty important, so take a closer look. If you experience any problems with your paths you should check them here.</p>
+
+<ul>
+  <li><strong>url</strong>: Enter your domain! Example: <code>https://mysite.com</code></li>
+  <li><strong>baseurl</strong>: The baseurl can remain empty if you’re not going to host your site in a subfolder. But if you want your site to be something like <code>htttp://mysite.com/blog</code> you should write down <code>/blog</code> here.</li>
+</ul>
+
+<h5 id="includes">Includes</h5>
+
+<ul>
+  <li><strong>include</strong>: Force the inclusion of the pages directory.</li>
+</ul>
+
+<h5 id="outputting">Outputting</h5>
+
+<ul>
+  <li><strong>permalink</strong>: By default your links will look like this <code>http://mysite.com/categories/post-name.html</code>. If you want a different permalink check <a href="https://jekyllrb.com/docs/permalinks/" target="_blank">Jekyll documentation</a>.</li>
+  <li><strong>category_dir</strong>: The default directory is <code>categories</code>, so for example if you go to random category index you will see something like this <code>http://mysite.com/categories/category-name/postname.html</code>.</li>
+</ul>
+
+<h5 id="pagination">Pagination</h5>
+<ul>
+  <li><strong>paginate</strong>: You should enter a number that stands for the number of posts per page.</li>
+  <li><strong>paginate_path</strong>: The default path is <code>/page:num/</code>, so for example if you go to second page you will see something like this <code>http://mysite.com/page2/</code>.</li>
+</ul>
+
+<p><strong>Important Note:</strong> Pagination is currently working only on home page due to Jekyll limitations.</p>
+
+<h5 id="conversion">Conversion</h5>
+<ul>
+  <li><strong>markdown</strong>: Choose your Markdown renderer. Different Markdown renderers supported by Jekyll sometimes have extra options available. I suggest to stick with the default.</li>
+  <li><strong>excerpt_separator</strong>: By default when you’re writing a post, you should add <code>&lt;!--more--&gt;</code> to define excerpt. You have three options - to leave it as is, to change the tag or to completely remove it but in this case you’ll always see the full content.</li>
+</ul>
+
+<h5 id="assets-settings">Assets Settings</h5>
+<ul>
+  <li><strong>sass</strong>: Choose the path to all of yours SCSS partials and the compression method for the final file.</li>
+</ul>
+
+<p>If you need extra help, just check out the <a href="https://jekyllrb.com/docs/home/" target="_blank">official Jekyll documentation</a>.</p>
+
+<h3 id="additional-configuration">Additional Configuration</h3>
+
+<dl>
+	<dt>How to change your default theme color?</dt>
+	<dd>Just go to <code>/assets/partials/_vars.scss</code> and change the color of the <code>$primary-color</code> variable.</dd>
+	
+	<dt>How Facebook knows which image to use for sharing?</dt>
+	<dd>By default the script gets the first image in the post so take that in mind when you write a blog post.</dd>
+</dl>
+
+<h3 id="adding-post">Adding Post</h3>
+
+<p>The next thing after you are done with the configuration file is to add your first post. You will need to have at least basic knowledge of HTML or Markdown.</p>
+
+<p>All you need to do is to create a new file with name <code>YYYY-MM-DD-my-first-post</code> and <code>.markdown</code> or <code>.md</code> extension. Create it in the <code>_posts</code> folder. By default the name of the file is composed by date and title but you can overwrite these in the post’s front matter.</p>
+
+<p>In the beginning of the every post you have a so called <a href="https://jekyllrb.com/docs/frontmatter/" target="_blank">front matter</a> block which contains some data about the post. Here is the short description of the options.</p>
+
+<p><strong>layout</strong>: The post layout.</p>
+
+<p><strong>date</strong>: Exact date when the post is published. The date is actually pretty important and I suggest you never change it. Specific date helps Jekyll to order correctly all the posts. Also, the date is used to generate a unique ID, so Disqus can always get the right comments for the right post, even when you change the title.</p>
+
+<p><strong>title</strong>: Post’s title.</p>
+
+<p><strong>description</strong>: Meta description used for better SEO.</p>
+
+<p><strong>comments</strong>: By default they are always <code>true</code>, but if you want to turn them off for a specific post just set this to <code>false</code>.</p>
+
+<p><strong>category</strong>: List the categories in which you want your post to appear.</p>
+
+<p><strong>tags</strong>: List your tags here.</p>
+
+<h3 id="adding-page">Adding Page</h3>
+
+<p>Adding page is even simpler than adding post. Just create a sub-folder to the pages directory and inside that sub-folder create index.md file. The folder name is your page name. Every folder must contain index file. Pages are also using front matter to add information to your page.</p>
+
+<p><strong>layout</strong>: The page layout.</p>
+
+<p><strong>title</strong>: Page’s title.</p>
+
+<p><strong>permalink</strong>: This is important. If you do not enter the permalink, your url will be something like this <code>http://example.com/_pages/about</code>. Enter the permalink and get rid of <code>/_pages/</code> part. Do not forget the trailing slash!</p>
+
+<p>That’s it! Do not hesitate to ask if you have any questions. Also you can send me feature requests. There are some nice features that are planed for the upcoming versions. Happy blogging!</p>
+
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Documentation - Configuration & First Steps&p[summary]=Configuration
+All configuration options are in the _config.yml file.
+
+
+    
+    Created by Hannah Sharp
+
+
+General Settings
+
+  name: Your ...&p[url]=http://localhost:4000/docs/help/docmentation.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/docs/help/docmentation.html&text=Configuration
+All configuration options are in the _config.yml file.
+
+
+    
+    Created by Hannah Sharp
+
+
+General Settings
+
+  name: Your ...&hashtags=documentation,steve,jekyll," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/documentation">documentation</a></li>
+                
+                <li><a href="http://localhost:4000/tag/steve">steve</a></li>
+                
+                <li><a href="http://localhost:4000/tag/jekyll">jekyll</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+
+            </main>
+        </div>
+
+        <script src="http://localhost:4000/assets/js/jquery-1.12.2.min.js"></script>
+<script src="http://localhost:4000/assets/js/backtotop.js"></script>
+<script src="http://localhost:4000/assets/js/lunr.min.js"></script>
+<script src="http://localhost:4000/assets/js/lunr-feed.js"></script>
+<script src="http://localhost:4000/assets/js/jquery.fitvids.js"></script>
+<script src="http://localhost:4000/assets/js/svg4everybody.min.js"></script>
+<script src="http://localhost:4000/assets/js/scripts.js"></script>
+
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-XXXXXXX-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    </body>
+</html>
