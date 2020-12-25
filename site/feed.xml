@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description>I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 25 Dec 2020 13:40:44 -0500</pubDate>
+    <lastBuildDate>Fri, 25 Dec 2020 13:40:44 -0500</lastBuildDate>
+    <generator>Jekyll v3.8.4</generator>
+    
+      <item>
+        <title>Documentation - Configuration &amp; First Steps</title>
+        <description>&lt;h3 id=&quot;configuration&quot;&gt;Configuration&lt;/h3&gt;
+&lt;p&gt;All configuration options are in the &lt;code&gt;_config.yml&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;https://cdn.dribbble.com/users/1073937/screenshots/5036567/waterfall.png&quot; /&gt;
+    &lt;figcaption&gt;Created by &lt;a href=&quot;https://dribbble.com/HannahLizSharp&quot; target=&quot;_blank_&quot;&gt;Hannah Sharp&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h5 id=&quot;general-settings&quot;&gt;General Settings&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;name&lt;/strong&gt;: Your name.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;job_title&lt;/strong&gt;: Your job title.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;email&lt;/strong&gt;: Your email. There are two cases where email is used. First, if you entered the email and you’ve activated &lt;strong&gt;show_email&lt;/strong&gt; option the end result will be a visible social email icon in the sidebar. The second use of your email is when you do not set your own avatar. In this case your email is used by the gravatar plugin to automatically fetch your gravatar.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;description&lt;/strong&gt;: Describe yourself with a couple of words.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;avatar&lt;/strong&gt;: Write down the full path to the avatar &lt;code&gt;http://mysite.com/blog/assets/images/avatar.jpg&lt;/code&gt;. If you comment this row, “Steve” checks if you have an email and shows your gravatar if you have any.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;favicon&lt;/strong&gt;: Want a favicon? Enter the full path here. For example &lt;code&gt;http://mysite.com/blog/assets/favicon.ico&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;twitter_handler&lt;/strong&gt;: Add your Twitter username without the @. It will be used for &lt;a href=&quot;https://dev.twitter.com/cards/overview&quot; target=&quot;_blank&quot;&gt;Twitter Cards&lt;/a&gt;. The default card type for “Steve” is &lt;a href=&quot;https://dev.twitter.com/cards/types/summary-large-image&quot; target=&quot;_blank&quot;&gt;Summary Card with Large Image&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;analytics_code&lt;/strong&gt;: Add your Google Analytics Tracking ID. Example ID: &lt;em&gt;UA-XXXXXXX-2&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;disqus&lt;/strong&gt;: Add your website shortname from Disqus.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Important Note:&lt;/strong&gt; Keep in mind that &lt;strong&gt;name&lt;/strong&gt;, &lt;strong&gt;job_title&lt;/strong&gt;, &lt;strong&gt;twitter_handler&lt;/strong&gt; and some of the post specific variables are used as default meta data in some cases.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h5 id=&quot;social-accounts&quot;&gt;Social Accounts&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;social_networks&lt;/strong&gt;: Here you can find the list of all the available social networks that you can currently use. Of course you can always add a new one by yourself or ask for it to be available in the next version of the theme. If you don’t want a specific social network to be seen, just leave the url value empty or delete the line.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Important:&lt;/strong&gt; Do not change the names of the social networks!&lt;/p&gt;
+
+&lt;h5 id=&quot;modules-settings&quot;&gt;Modules Settings&lt;/h5&gt;
+&lt;p&gt;One thing to remember - 1 is &lt;strong&gt;on&lt;/strong&gt;, 0 is &lt;strong&gt;off&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;show_categories&lt;/strong&gt;: If it is on and you’ve added categories in the post itself the categories will be visible. If it is off and you’ve added categories in the post they will be hidden. This option is helpful if you want to turn on/off categories for all your posts at once.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;show_tags&lt;/strong&gt;: If it is on and you’ve added tags in the post itself the tags will be visible. If it is off and you’ve added tags in the post they will be hidden.  This option is helpful if you want to turn on/off tags for all your posts at once.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;show_email&lt;/strong&gt;: If this is turned on and you’ve entered an email value in &lt;strong&gt;email&lt;/strong&gt;, an email icon will appear next to your social media accounts and all your readers will be able to contact you.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;show_rss&lt;/strong&gt;: If this is turned on, a new RSS button will appear in the sidebar next to your social media accounts.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;show_comments&lt;/strong&gt;: If it is on and you’ve added &lt;code&gt;comments: true&lt;/code&gt; in the post itself the comments will be visible. If it is off and you’ve added &lt;code&gt;comments: true&lt;/code&gt; in the post the comments will be hidden. This option is helpful if you want to turn on/off comments for all your posts at once.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;show_menu&lt;/strong&gt;: If it is on the main menu will be visible.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;fixed_sidebar&lt;/strong&gt;: If it is on the sidebar will be fixed (sticky).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;defaults&quot;&gt;Defaults&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;defaults&lt;/strong&gt;: The only available option at the moment is whether to enable the comments automatically in the post or not. The default value is &lt;code&gt;true&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;serving&quot;&gt;Serving&lt;/h5&gt;
+&lt;p&gt;These options are pretty important, so take a closer look. If you experience any problems with your paths you should check them here.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;url&lt;/strong&gt;: Enter your domain! Example: &lt;code&gt;https://mysite.com&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;baseurl&lt;/strong&gt;: The baseurl can remain empty if you’re not going to host your site in a subfolder. But if you want your site to be something like &lt;code&gt;htttp://mysite.com/blog&lt;/code&gt; you should write down &lt;code&gt;/blog&lt;/code&gt; here.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;includes&quot;&gt;Includes&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;include&lt;/strong&gt;: Force the inclusion of the pages directory.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;outputting&quot;&gt;Outputting&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;permalink&lt;/strong&gt;: By default your links will look like this &lt;code&gt;http://mysite.com/categories/post-name.html&lt;/code&gt;. If you want a different permalink check &lt;a href=&quot;https://jekyllrb.com/docs/permalinks/&quot; target=&quot;_blank&quot;&gt;Jekyll documentation&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;category_dir&lt;/strong&gt;: The default directory is &lt;code&gt;categories&lt;/code&gt;, so for example if you go to random category index you will see something like this &lt;code&gt;http://mysite.com/categories/category-name/postname.html&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;pagination&quot;&gt;Pagination&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;paginate&lt;/strong&gt;: You should enter a number that stands for the number of posts per page.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;paginate_path&lt;/strong&gt;: The default path is &lt;code&gt;/page:num/&lt;/code&gt;, so for example if you go to second page you will see something like this &lt;code&gt;http://mysite.com/page2/&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Important Note:&lt;/strong&gt; Pagination is currently working only on home page due to Jekyll limitations.&lt;/p&gt;
+
+&lt;h5 id=&quot;conversion&quot;&gt;Conversion&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;markdown&lt;/strong&gt;: Choose your Markdown renderer. Different Markdown renderers supported by Jekyll sometimes have extra options available. I suggest to stick with the default.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;excerpt_separator&lt;/strong&gt;: By default when you’re writing a post, you should add &lt;code&gt;&amp;lt;!--more--&amp;gt;&lt;/code&gt; to define excerpt. You have three options - to leave it as is, to change the tag or to completely remove it but in this case you’ll always see the full content.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;assets-settings&quot;&gt;Assets Settings&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;sass&lt;/strong&gt;: Choose the path to all of yours SCSS partials and the compression method for the final file.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you need extra help, just check out the &lt;a href=&quot;https://jekyllrb.com/docs/home/&quot; target=&quot;_blank&quot;&gt;official Jekyll documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;additional-configuration&quot;&gt;Additional Configuration&lt;/h3&gt;
+
+&lt;dl&gt;
+	&lt;dt&gt;How to change your default theme color?&lt;/dt&gt;
+	&lt;dd&gt;Just go to &lt;code&gt;/assets/partials/_vars.scss&lt;/code&gt; and change the color of the &lt;code&gt;$primary-color&lt;/code&gt; variable.&lt;/dd&gt;
+	
+	&lt;dt&gt;How Facebook knows which image to use for sharing?&lt;/dt&gt;
+	&lt;dd&gt;By default the script gets the first image in the post so take that in mind when you write a blog post.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;h3 id=&quot;adding-post&quot;&gt;Adding Post&lt;/h3&gt;
+
+&lt;p&gt;The next thing after you are done with the configuration file is to add your first post. You will need to have at least basic knowledge of HTML or Markdown.&lt;/p&gt;
+
+&lt;p&gt;All you need to do is to create a new file with name &lt;code&gt;YYYY-MM-DD-my-first-post&lt;/code&gt; and &lt;code&gt;.markdown&lt;/code&gt; or &lt;code&gt;.md&lt;/code&gt; extension. Create it in the &lt;code&gt;_posts&lt;/code&gt; folder. By default the name of the file is composed by date and title but you can overwrite these in the post’s front matter.&lt;/p&gt;
+
+&lt;p&gt;In the beginning of the every post you have a so called &lt;a href=&quot;https://jekyllrb.com/docs/frontmatter/&quot; target=&quot;_blank&quot;&gt;front matter&lt;/a&gt; block which contains some data about the post. Here is the short description of the options.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;layout&lt;/strong&gt;: The post layout.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;date&lt;/strong&gt;: Exact date when the post is published. The date is actually pretty important and I suggest you never change it. Specific date helps Jekyll to order correctly all the posts. Also, the date is used to generate a unique ID, so Disqus can always get the right comments for the right post, even when you change the title.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;title&lt;/strong&gt;: Post’s title.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;description&lt;/strong&gt;: Meta description used for better SEO.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;comments&lt;/strong&gt;: By default they are always &lt;code&gt;true&lt;/code&gt;, but if you want to turn them off for a specific post just set this to &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;category&lt;/strong&gt;: List the categories in which you want your post to appear.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;tags&lt;/strong&gt;: List your tags here.&lt;/p&gt;
+
+&lt;h3 id=&quot;adding-page&quot;&gt;Adding Page&lt;/h3&gt;
+
+&lt;p&gt;Adding page is even simpler than adding post. Just create a sub-folder to the pages directory and inside that sub-folder create index.md file. The folder name is your page name. Every folder must contain index file. Pages are also using front matter to add information to your page.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;layout&lt;/strong&gt;: The page layout.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;title&lt;/strong&gt;: Page’s title.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;permalink&lt;/strong&gt;: This is important. If you do not enter the permalink, your url will be something like this &lt;code&gt;http://example.com/_pages/about&lt;/code&gt;. Enter the permalink and get rid of &lt;code&gt;/_pages/&lt;/code&gt; part. Do not forget the trailing slash!&lt;/p&gt;
+
+&lt;p&gt;That’s it! Do not hesitate to ask if you have any questions. Also you can send me feature requests. There are some nice features that are planed for the upcoming versions. Happy blogging!&lt;/p&gt;
+</description>
+        <pubDate>Sun, 20 Mar 2016 12:36:00 -0400</pubDate>
+        <link>http://localhost:4000/docs/help/docmentation.html</link>
+        <guid isPermaLink="true">http://localhost:4000/docs/help/docmentation.html</guid>
+        
+        <category>documentation</category>
+        
+        <category>steve</category>
+        
+        <category>jekyll</category>
+        
+        
+        <category>docs</category>
+        
+        <category>help</category>
+        
+      </item>
+    
+      <item>
+        <title>Installation</title>
+        <description>&lt;figure class=&quot;aligncenter&quot;&gt;
+    &lt;img src=&quot;https://snipcartweb-10f3.kxcdn.com/media/all/9570/snipcart-static-site-ecommerce-jekyll.png&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I assume you have already downloaded and installed Ruby. Here’s what you need to do next:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Run &lt;code&gt;gem install jekyll bundler&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Copy the theme in your desired folder.&lt;/li&gt;
+  &lt;li&gt;Enter into the folder by executing &lt;code&gt;cd name-of-the-folder&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Run &lt;code&gt;bundle install&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;If you want to access and customize the theme, use &lt;code&gt;bundle exec jekyll serve&lt;/code&gt;. This way it will be accessible on &lt;code&gt;http://localhost:4000&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Upload the content of the compiled &lt;code&gt;_site&lt;/code&gt; folder on your host server.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Wed, 16 Mar 2016 08:34:00 -0400</pubDate>
+        <link>http://localhost:4000/docs/help/installation.html</link>
+        <guid isPermaLink="true">http://localhost:4000/docs/help/installation.html</guid>
+        
+        <category>installation</category>
+        
+        <category>steve</category>
+        
+        <category>jekyll</category>
+        
+        
+        <category>docs</category>
+        
+        <category>help</category>
+        
+      </item>
+    
+      <item>
+        <title>What is Jekyll?</title>
+        <description>&lt;p&gt;Jekyll is a parsing engine bundled as a ruby gem used to build static websites from dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as “a simple, blog aware, static site generator”.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-0.3.5&amp;amp;q=80&amp;amp;fm=jpg&amp;amp;crop=entropy&amp;amp;s=d1b9ba0f56bbb8a965d26e8c4177f4af&quot; alt=&quot;Alt Text&quot; /&gt;&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h3 id=&quot;what-does-jekyll-do&quot;&gt;What does Jekyll do?&lt;/h3&gt;
+
+&lt;p&gt;Jekyll is installed as a ruby gem local computer. Once installed you can call jekyll serve in the terminal in a directory and provided that directory is setup in a way jekyll expects, it will do magic stuff like parse markdown/textile files, compute categories, tags, permalinks, and construct your pages from layout templates and partials.&lt;/p&gt;
+
+&lt;p&gt;Once parsed, Jekyll stores the result in a self-contained static _site folder. The intention here is that you can serve all contents in this folder statically from a plain static web-server.&lt;/p&gt;
+
+&lt;p&gt;You can think of Jekyll as a normalish dynamic blog but rather than parsing content, templates, and tags on each request, Jekyll does this once beforehand and caches the entire website in a folder for serving statically.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Source: &lt;a href=&quot;http://jekyllbootstrap.com/lessons/jekyll-introduction.html&quot; target=&quot;_blank&quot;&gt;http://jekyllbootstrap.com/lessons/jekyll-introduction.html&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 15 Mar 2016 22:00:00 -0400</pubDate>
+        <link>http://localhost:4000/docs/what-is-jekyll.html</link>
+        <guid isPermaLink="true">http://localhost:4000/docs/what-is-jekyll.html</guid>
+        
+        
+        <category>docs</category>
+        
+      </item>
+    
+      <item>
+        <title>Sample Data</title>
+        <description>&lt;p&gt;Markdown (or Textile), Liquid, HTML &amp;amp; CSS go in. Static sites come out ready for deployment.&lt;/p&gt;
+
+&lt;h4 id=&quot;headings&quot;&gt;Headings&lt;/h4&gt;
+
+&lt;h1 id=&quot;heading-1&quot;&gt;Heading 1&lt;/h1&gt;
+
+&lt;h2 id=&quot;heading-2&quot;&gt;Heading 2&lt;/h2&gt;
+
+&lt;h3 id=&quot;heading-3&quot;&gt;Heading 3&lt;/h3&gt;
+
+&lt;h4 id=&quot;heading-4&quot;&gt;Heading 4&lt;/h4&gt;
+
+&lt;h5 id=&quot;heading-5&quot;&gt;Heading 5&lt;/h5&gt;
+
+&lt;h6 id=&quot;heading-6&quot;&gt;Heading 6&lt;/h6&gt;
+
+&lt;h4 id=&quot;blockquote&quot;&gt;Blockquote&lt;/h4&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;No more databases, comment moderation, or pesky updates to install—just your content.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;unordered-list&quot;&gt;Unordered List&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Jekyll
+    &lt;ul&gt;
+      &lt;li&gt;Nested Jekyll&lt;/li&gt;
+      &lt;li&gt;Nested Ruby&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Ruby&lt;/li&gt;
+  &lt;li&gt;Markdown&lt;/li&gt;
+  &lt;li&gt;Liquid&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;ordered-list&quot;&gt;Ordered List&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Jekyll
+    &lt;ol&gt;
+      &lt;li&gt;Nested Jekyll&lt;/li&gt;
+      &lt;li&gt;Nested Ruby&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Ruby&lt;/li&gt;
+  &lt;li&gt;Markdown&lt;/li&gt;
+  &lt;li&gt;Liquid&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;link&quot;&gt;Link&lt;/h4&gt;
+
+&lt;p&gt;This is &lt;a href=&quot;http://example.com/&quot; title=&quot;Title&quot;&gt;an example&lt;/a&gt; inline link.&lt;/p&gt;
+
+&lt;h4 id=&quot;paragraph-w-strong-em-etc&quot;&gt;Paragraph w/ strong, em, etc.&lt;/h4&gt;
+
+&lt;p&gt;These are just a few of the &lt;em&gt;available&lt;/em&gt; &lt;strong&gt;configuration&lt;/strong&gt; options. Many configuration options can &lt;strike&gt;either&lt;/strike&gt; be specified as flags on the &lt;abbr title=&quot;Command Line Tool&quot;&gt;command line&lt;/abbr&gt;, or alternatively (and more commonly) they can be specified in a _config.yml file at the root of the source directory. Jekyll will &lt;a href=&quot;http://joro.me/&quot; target=&quot;_blank&quot;&gt;automatically use&lt;/a&gt; the options from this file when run. For example, if you place the following lines in your _config.yml file.&lt;/p&gt;
+
+&lt;h4 id=&quot;image&quot;&gt;Image&lt;/h4&gt;
+&lt;figure class=&quot;aligncenter&quot;&gt;
+	&lt;img src=&quot;https://images.unsplash.com/photo-1449452198679-05c7fd30f416?ixlib=rb-0.3.5&amp;amp;q=80&amp;amp;fm=jpg&amp;amp;crop=entropy&amp;amp;s=73181f1c6d56b933b30de2bfe21fdf3b&quot; /&gt;
+	&lt;figcaption&gt;Photo by &lt;a href=&quot;https://unsplash.com/rmaedavis&quot; target=&quot;_blank&quot;&gt;Rachel Davis&lt;/a&gt;.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h4 id=&quot;video&quot;&gt;Video&lt;/h4&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/iWowJBRMtpc&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h4 id=&quot;default-code-block&quot;&gt;Default Code Block&lt;/h4&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This is code blog.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;styled-code-block&quot;&gt;Styled Code Block&lt;/h4&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c1&quot;&gt;#!/usr/bin/ruby&lt;/span&gt;
+&lt;span class=&quot;vg&quot;&gt;$LOAD_PATH&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'.'&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;support&quot;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Decade&lt;/span&gt;
+&lt;span class=&quot;kp&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Week&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;no_of_yrs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;no_of_months&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Week&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;FIRST_DAY&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;d1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Decade&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Week&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;FIRST_DAY&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;Week&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;weeks_in_month&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;Week&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;weeks_in_year&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;d1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;no_of_months&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;definition-lists&quot;&gt;Definition Lists&lt;/h4&gt;
+
+&lt;dl&gt;
+    &lt;dt&gt;Definition Title&lt;/dt&gt;
+    &lt;dd&gt;Definition Description&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;h4 id=&quot;paragraphs-w-aligned-images&quot;&gt;Paragraphs w/ Aligned Images&lt;/h4&gt;
+
+&lt;p&gt;The Jekyll gem makes a jekyll executable available to you in your Terminal window. You can use this command in a number of ways.&lt;/p&gt;
+
+&lt;figure class=&quot;alignleft&quot;&gt;
+	&lt;img width=&quot;250&quot; src=&quot;https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-0.3.5&amp;amp;q=80&amp;amp;fm=jpg&amp;amp;crop=entropy&amp;amp;s=3f9c78df0edb464244bbabb04d1797d8&quot; /&gt;
+	&lt;figcaption&gt;Photo by &lt;a href=&quot;https://unsplash.com/dustinlee&quot; target=&quot;_blank&quot;&gt;Dustin Lee&lt;/a&gt;.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This site aims to be a comprehensive guide to Jekyll. We’ll cover topics such as getting your site up and running, creating and managing your content, customizing the way your site works and looks, deploying to various environments, and give you some advice on participating in the future development of Jekyll itself.&lt;/p&gt;
+
+&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind GitHub Pages, which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free.&lt;/p&gt;
+
+&lt;figure class=&quot;alignright&quot;&gt;
+	&lt;img width=&quot;250&quot; src=&quot;https://images.unsplash.com/photo-1442037025225-e1cffaa2dc23?ixlib=rb-0.3.5&amp;amp;q=80&amp;amp;fm=jpg&amp;amp;crop=entropy&amp;amp;s=7fe04b68b0cb123bf568c6951c14b177&quot; /&gt;
+	&lt;figcaption&gt;Photo by &lt;a href=&quot;https://unsplash.com/lobostudiohamburg&quot; target=&quot;_blank&quot;&gt;LoboStudio Hamburg&lt;/a&gt;.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Throughout this guide there are a number of small-but-handy pieces of information that can make using Jekyll easier, more interesting, and less hazardous. Here’s what to look out for.&lt;/p&gt;
+
+&lt;p&gt;If you come across anything along the way that we haven’t covered, or if you know of a tip you think others would find handy, please file an issue and we’ll see about including it in this guide.&lt;/p&gt;
+
+&lt;p&gt;The front matter is where Jekyll starts to get really cool. Any file that contains a YAML front matter block will be processed by Jekyll as a special file. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 11 Mar 2016 23:56:00 -0500</pubDate>
+        <link>http://localhost:4000/docs/sample-data.html</link>
+        <guid isPermaLink="true">http://localhost:4000/docs/sample-data.html</guid>
+        
+        
+        <category>docs</category>
+        
+      </item>
+    
+  </channel>
+</rss>
